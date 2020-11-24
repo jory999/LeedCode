@@ -18,7 +18,7 @@ int main(){
                 printf("%d",nownumber[j]);
                
             } 
-scanf("input:");
+scanf("input:"); //asd
 
              return 0;
             // system(pause);
