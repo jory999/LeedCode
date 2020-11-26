@@ -53,7 +53,7 @@ bool ispalindrome(ListNode* head){
 
 int main(){
     
-vector<int> nums={1,2,5,2,1,3};
+vector<int> nums={1,2,5,2,1};
 ListNode *nowhead,*tempnode;
 tempnode=new ListNode(0);
 nowhead=tempnode;
@@ -61,16 +61,16 @@ nowhead=tempnode;
 for(int i=0;i < nums.size(); i++){
 
    tempnode->val=nums[i];
+   /* tempnode->next=new ListNode(0);
+   tempnode=tempnode->next; */
+   if(i<nums.size()-1){ 
    tempnode->next=new ListNode(0);
    tempnode=tempnode->next;
-   /* if(i<nums.size()-1){ 
-   tempnode->next=new ListNode(0);
-   tempnode=tempnode->next;
-   } */
+   }
 }
-ListNode *t;
+/* ListNode *t;
 t= --tempnode ;
-t->next=nullptr;
+t->next=nullptr; */
 
 
 for(ListNode *p=nowhead;p;p=p->next){
