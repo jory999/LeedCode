@@ -53,7 +53,7 @@ bool ispalindrome(ListNode* head){
 
 int main(){
     
-vector<int> nums={1,2,5,2,1};
+vector<int> nums={1,2,5,2,1,3};
 ListNode *nowhead,*tempnode;
 tempnode=new ListNode(0);
 nowhead=tempnode;
@@ -63,17 +63,29 @@ for(int i=0;i < nums.size(); i++){
    tempnode->val=nums[i];
    tempnode->next=new ListNode(0);
    tempnode=tempnode->next;
+   /* if(i<nums.size()-1){ 
+   tempnode->next=new ListNode(0);
+   tempnode=tempnode->next;
+   } */
 }
-*tempnode --;
-tempnode->next=NULL;
+ListNode *t;
+t= --tempnode ;
+t->next=nullptr;
 
- //
-//tempnode->next=NULL;
+
 for(ListNode *p=nowhead;p;p=p->next){
 cout<<p->val<<", ";
 
 }
+bool bbb=ispalindrome(nowhead);
+if(bbb)
+{
+printf("yes");
+}
+else
+{
+   printf("no");
+}
 
-printf("aaa%nd",ispalindrome(nowhead));
 
 }
