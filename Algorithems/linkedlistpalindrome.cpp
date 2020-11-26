@@ -72,7 +72,7 @@ for(int i=0;i < nums.size(); i++){
 t= --tempnode ;
 t->next=nullptr; */
 
-//更改提交 再次更改 Github vsc ubuntu
+//更改提交 再次更改 Github vsc ubuntu hello Ubuntu
 
 
 for(ListNode *p=nowhead;p;p=p->next){
