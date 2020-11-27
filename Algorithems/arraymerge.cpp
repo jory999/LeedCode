@@ -26,7 +26,7 @@ int main(){
 
     int m=3,n=3;
 
-    merge(nums1,m,nums2,n);//aaa bbb
+    merge(nums1,m,nums2,n);
 
     return 0;
 }
