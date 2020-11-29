@@ -9,13 +9,13 @@ int maxsubarray(vector<int> &nums){
 int result=nums[0];
 int tmp=0;
 int l;
- /* for (const auto &x: nums) {
+ for (const auto &x: nums) {
             tmp = max(tmp + x, x);
             result = max(result, tmp);
-        } */
+        }
 
 
-for (int i=1;i<=nums.size();i++){
+/* for (int i=1;i<=nums.size();i++){
     for(int j=0;j<=nums.size()-i;j++){
          for(int k=0;k<i;k++){
                 
@@ -24,7 +24,7 @@ for (int i=1;i<=nums.size();i++){
          }
           if(tmp>result){  result=tmp;  }
          tmp=0;
-    }
+    } */
     
 }
 
