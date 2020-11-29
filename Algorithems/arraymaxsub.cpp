@@ -8,7 +8,7 @@ int maxsubarray(vector<int> &nums){
 
 int result=nums[0];
 int tmp=0;
-int l;
+
  for (const auto &x: nums) {
             tmp = max(tmp + x, x);
             result = max(result, tmp);
@@ -24,9 +24,9 @@ int l;
          }
           if(tmp>result){  result=tmp;  }
          tmp=0;
-    } */
+    } 
     
-}
+}*/
 
 return result;
 
