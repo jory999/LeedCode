@@ -34,9 +34,9 @@ return result;
 
 int main(){
 
-    //   vector<int> nownums={-2,1,-3,4,-1,2,1,-5,4};
+       vector<int> nownums={-2,1,-3,4,-1,2,1,-5,4};
      //vector<int> nownumber={1,2,3,4,5,6,7};
-vector<int> nownums={-2,1};
+//vector<int> nownums={-2,1};
       cout<< maxsubarray( nownums) << endl;
 
     return 0;
