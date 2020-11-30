@@ -3,14 +3,16 @@
 # include <vector>
 # include <queue>
 # include <math.h>
-# include <algorithm>
-# include <climits>
+
+
 
 #ifdef __linux__
 #define NOWSYSTEM "linux sys"
+# include <climits>
 #endif   
 #ifdef _WIN32     
 #define  NOWSYSTEM   "windows sys"
+# include <algorithm>
 #endif
 
 using namespace std;
