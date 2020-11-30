@@ -47,6 +47,16 @@ class MinStack {
 };
 
 int main(){
+     int judge;
+
+     judge=system("cls");
+
+     if(judge==0){
+          cout<<"Windows"<<endl;
+     }else{
+          cout<<"Linux"<<endl;
+     }
+
      MinStack *mstack=new MinStack();
      // MinStack mstack;
 
