@@ -57,11 +57,11 @@ int main(){
 
 cout<<NOWSYSTEM<<endl;
 
-#ifdef __linux__
+# ifdef __linux__
  cout<<"OS is linux"<<endl;
-#endif   
+# endif   
 # ifdef _WIN32     
-     cout<<"OS id windows"<<endl;
+     cout<<"OS is windows"<<endl;
 # endif
     
     /*  int judge;
