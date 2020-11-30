@@ -3,7 +3,17 @@
 # include <vector>
 # include <queue>
 # include <math.h>
+
+
+
+#ifdef __linux__
+#define NOWSYSTEM "linux sys"
+# include <climits>
+#endif   
+#ifdef _WIN32     
+#define  NOWSYSTEM   "windows sys"
 # include <algorithm>
+#endif
 
 using namespace std;
 
@@ -46,6 +56,26 @@ class MinStack {
 };
 
 int main(){
+
+cout<<NOWSYSTEM<<endl;
+
+# ifdef __linux__
+ cout<<"OS is linux"<<endl;
+# endif   
+# ifdef _WIN32     
+     cout<<"OS is windows"<<endl;
+# endif
+    
+    /*  int judge;
+
+     judge=system("cls");
+
+     if(judge==0){
+          cout<<"Windows"<<endl;
+     }else{
+          cout<<"Linux"<<endl;
+     } */
+
      MinStack *mstack=new MinStack();
      // MinStack mstack;
 
