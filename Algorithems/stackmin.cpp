@@ -81,7 +81,7 @@ cout<<NOWSYSTEM<<endl;
 
      mstack->push(-5);
      mstack->push(-3);
-     mstack->push(-9);
+     mstack->push(-3);
      mstack->push(11);
      mstack->push(7);
 
